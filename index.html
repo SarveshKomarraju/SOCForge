@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCForge | Detection Engineering Laboratory</title>
+
+    <meta name="description"
+        content="SOCForge is a cybersecurity home lab showcasing detection engineering, attack simulations, and security operations using Wazuh, Sysmon, and Windows telemetry.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar-container">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-symbol">></span>
+                SOCForge
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="detections.html">Detections</a>
+                </li>
+
+                <li>
+                    <a href="simulations.html">Simulations</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+                LAB ONLINE
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+    <!-- Hero Section -->
+
+    <main>
+
+
+        <section class="hero">
+
+
+            <div class="hero-content">
+
+
+                <div class="hero-tag">
+
+                    <span></span>
+                    SECURITY OPERATIONS LABORATORY
+
+                </div>
+
+
+
+                <h1>
+
+                    Building
+                    <span>Detection Engineering</span>
+                    Through Real-World Simulation
+
+                </h1>
+
+
+
+                <p>
+                    SOCForge is a hands-on cybersecurity sandbox engineered to model threat vectors,
+                    generate high-fidelity endpoint telemetry via Sysmon, and craft custom Wazuh
+                    rules mapped directly to the MITRE ATT&amp;CK framework.
+                </p>
+
+
+
+                <div class="hero-buttons">
+
+                    <a href="detections.html" class="primary-button">
+
+                        Explore Detections
+
+                    </a>
+
+
+                    <a href="simulations.html" class="secondary-button">
+
+                        View Attack Chains
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="technology-stack">
+
+
+                    <span>Wazuh</span>
+
+                    <span>Sysmon</span>
+
+                    <span>Windows</span>
+
+                    <span>MITRE ATT&amp;CK</span>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- SOC Terminal Preview -->
+
+
+            <div class="hero-terminal">
+
+
+                <div class="terminal-header">
+
+                    <div class="terminal-controls">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <p>
+                        socforge-monitor
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="terminal-body">
+
+                    <p class="terminal-line">
+                        <span class="green">[SYSTEM]</span> Daemon initialized. Listening on interface: any...
+                    </p>
+
+                    <p class="terminal-line">
+                        <span class="blue">[AGENT]</span> Endpoint "Win10-Prod-01" active (IP: 10.0.0.15)
+                    </p>
+
+                    <p class="terminal-line">
+                        <span class="yellow">[ALERT]</span> rule_id: 100003 | MITRE: T1059.001 (PowerShell)
+                    </p>
+
+                    <p class="terminal-line">
+                        <span class="red">[WARN]</span> Spawned: powershell.exe -e JABzAD0ATgBlAHcALQBPAGIAagBlAGMAd...
+                    </p>
+
+                    <p class="terminal-line">
+                        <span class="green">[STATUS]</span> Event logged. Telemetry successfully routed to SIEM.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <!-- Lab Metrics -->
+
+
+        <section class="metrics">
+
+
+            <div class="metric-card">
+
+
+                <h2>06</h2>
+
+                <p>
+                    Custom Detections
+                </p>
+
+
+            </div>
+
+
+
+            <div class="metric-card">
+
+
+                <h2>02</h2>
+
+                <p>
+                    Attack Chains
+                </p>
+
+
+            </div>
+
+
+
+
+            <div class="metric-card">
+
+
+                <h2>05+</h2>
+
+                <p>
+                    MITRE Techniques
+                </p>
+
+
+            </div>
+
+
+
+
+            <div class="metric-card">
+
+
+                <h2>03</h2>
+
+                <p>
+                    Security Tools
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- Architecture Preview -->
+
+
+        <section class="architecture-preview">
+
+
+            <div class="section-heading">
+
+
+                <span>
+                    LAB ARCHITECTURE
+                </span>
+
+
+                <h2>
+                    From Telemetry to Detection
+                </h2>
+
+
+            </div>
+
+
+
+
+            <div class="architecture-flow">
+
+
+                <div class="architecture-node">
+
+                    Windows Endpoint
+
+                </div>
+
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+
+                <div class="architecture-node">
+
+                    Sysmon Telemetry
+
+                </div>
+
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+
+                <div class="architecture-node">
+
+                    Wazuh Agent
+
+                </div>
+
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+
+                <div class="architecture-node">
+
+                    Detection Engine
+
+                </div>
+
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+
+                <div class="architecture-node highlight">
+
+                    SOC Alerts
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- Capabilities -->
+
+
+        <section class="capabilities">
+
+
+            <div class="section-heading">
+
+
+                <span>
+                    CORE CAPABILITIES
+                </span>
+
+
+                <h2>
+                    A Complete Blue Team Workflow
+                </h2>
+
+
+            </div>
+
+
+
+
+            <div class="capability-grid">
+
+
+                <article class="capability-card">
+
+
+                    <h3>
+                        Detection Engineering
+                    </h3>
+
+
+                    <p>
+
+                        Writing and optimizing XML rule logic to detect active defense evasion, parsing unstructured
+                        Event Log data into actionable alerts.
+
+                    </p>
+
+
+                </article>
+
+
+
+
+                <article class="capability-card">
+
+
+                    <h3>Adversary Emulation</h3>
+                    <p>
+                        Simulating real-world post-exploitation techniques (including LOLBins and obfuscated command
+                        execution) to continuously validate telemetry pipelines.
+                    </p>
+
+
+                </article>
+
+
+
+
+                <article class="capability-card">
+
+
+                    <h3>
+                        Incident Analysis
+                    </h3>
+
+
+                    <p>
+
+                        Investigating alerts, analyzing evidence,
+                        and documenting security findings.
+
+                    </p>
+
+
+                </article>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- Footer -->
+
+
+        <footer>
+
+
+            <div>
+
+                <h3>
+                    SOCForge
+                </h3>
+
+
+                <p>
+                    Detection Engineering Laboratory
+                </p>
+
+
+            </div>
+
+
+
+            <p>
+
+                Built with Wazuh • Sysmon • Windows • MITRE ATT&amp;CK
+
+            </p>
+
+
+        </footer>
+
+
+
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

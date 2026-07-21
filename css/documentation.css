@@ -1,0 +1,546 @@
+ /* ==================================
+   SOCForge Documentation Page Styles
+================================== */
+
+
+ /* Hero */
+
+
+ .documentation-hero {
+
+     max-width: 1400px;
+
+     margin: auto;
+
+     padding: 90px 6% 70px;
+
+ }
+
+
+
+ .documentation-hero .hero-tag {
+
+     margin-bottom: 25px;
+
+ }
+
+
+
+ .documentation-hero h1 {
+
+     font-size: clamp(45px, 5vw, 70px);
+
+     line-height: 1.1;
+
+     letter-spacing: -2px;
+
+ }
+
+
+
+ .documentation-hero h1 span {
+
+     background: linear-gradient(90deg,
+             var(--primary),
+             var(--secondary));
+
+     background-clip: text;
+
+     color: transparent;
+
+ }
+
+
+
+ .documentation-hero p {
+
+     margin-top: 25px;
+
+     max-width: 850px;
+
+     color: var(--muted);
+
+     font-size: 19px;
+
+     line-height: 1.8;
+
+ }
+
+
+
+
+
+
+ /* Shared Sections */
+
+
+ .documentation-section {
+
+     max-width: 1400px;
+
+     margin: auto;
+
+     padding: 70px 6%;
+
+ }
+
+
+
+
+
+
+
+ /* Main Documentation Card */
+
+
+ .doc-card {
+
+     margin-top: 40px;
+
+     padding: 40px;
+
+     background: rgba(255, 255, 255, .03);
+
+     border: 1px solid var(--border);
+
+     border-radius: 18px;
+
+ }
+
+
+
+ .doc-card p {
+
+     color: var(--muted);
+
+     line-height: 1.9;
+
+     font-size: 16px;
+
+     margin-bottom: 20px;
+
+ }
+
+
+
+ .doc-card p:last-child {
+
+     margin-bottom: 0;
+
+ }
+
+
+
+
+
+
+
+
+ /* Workflow Cards */
+
+
+ .workflow-grid {
+
+     margin-top: 45px;
+
+     display: grid;
+
+     grid-template-columns: repeat(4, 1fr);
+
+     gap: 25px;
+
+ }
+
+
+
+ .workflow-card {
+
+     background: var(--surface);
+
+     border: 1px solid var(--border);
+
+     border-radius: 16px;
+
+     padding: 30px;
+
+     transition: .3s ease;
+
+ }
+
+
+
+ .workflow-card:hover {
+
+     transform: translateY(-7px);
+
+     border-color: var(--primary);
+
+     box-shadow:
+         0 20px 45px rgba(0, 0, 0, .25);
+
+ }
+
+
+
+ .workflow-card h3 {
+
+     font-size: 35px;
+
+     color: var(--primary);
+
+     margin-bottom: 15px;
+
+ }
+
+
+
+ .workflow-card h4 {
+
+     font-size: 20px;
+
+     margin-bottom: 15px;
+
+ }
+
+
+
+ .workflow-card p {
+
+     color: var(--muted);
+
+     line-height: 1.7;
+
+ }
+
+
+
+
+
+
+
+
+ /* Technology Stack */
+
+
+ .stack-list {
+
+     margin-top: 45px;
+
+     display: grid;
+
+     grid-template-columns: repeat(2, 1fr);
+
+     gap: 25px;
+
+ }
+
+
+
+ .stack-list div {
+
+     padding: 30px;
+
+     background:
+
+         rgba(255, 255, 255, .03);
+
+     border: 1px solid var(--border);
+
+     border-radius: 15px;
+
+     transition: .3s ease;
+
+ }
+
+
+
+ .stack-list div:hover {
+
+     border-color: var(--secondary);
+
+ }
+
+
+
+ .stack-list strong {
+
+     font-size: 22px;
+
+     color: var(--primary);
+
+ }
+
+
+
+ .stack-list p {
+
+     margin-top: 12px;
+
+     color: var(--muted);
+
+     line-height: 1.7;
+
+ }
+
+
+
+
+
+
+
+ /* Evidence Section */
+
+
+ .evidence-box {
+
+     margin-top: 40px;
+
+     padding: 40px;
+
+     border-radius: 18px;
+
+     background:
+
+         rgba(255, 255, 255, .03);
+
+     border: 1px solid var(--border);
+
+ }
+
+
+
+
+ .evidence-box>p {
+
+     color: var(--muted);
+
+     line-height: 1.7;
+
+     margin-bottom: 40px;
+
+ }
+
+
+
+
+ .evidence-grid {
+
+     display: grid;
+
+     grid-template-columns: repeat(2, 1fr);
+
+     gap: 30px;
+
+ }
+
+
+
+
+
+ .evidence-card {
+
+     background: var(--surface);
+
+     border: 1px solid var(--border);
+
+     border-radius: 18px;
+
+     padding: 30px;
+
+     transition: .3s ease;
+
+ }
+
+
+
+
+ .evidence-card:hover {
+
+     transform: translateY(-8px);
+
+     border-color: var(--primary);
+
+     box-shadow:
+
+         0 20px 50px rgba(0, 0, 0, .35);
+
+ }
+
+
+
+
+
+ .evidence-card h3 {
+
+     font-size: 22px;
+
+     margin-bottom: 15px;
+
+     color: var(--primary);
+
+ }
+
+
+
+
+ .evidence-card p {
+
+     color: var(--muted);
+
+     line-height: 1.7;
+
+     margin-bottom: 25px;
+
+ }
+
+
+
+
+
+ .evidence-images {
+
+     display: grid;
+
+     grid-template-columns: 1fr;
+
+     gap: 18px;
+
+ }
+
+
+
+
+
+ .evidence-images img {
+
+     width: 100%;
+
+     border-radius: 12px;
+
+     border: 1px solid var(--border);
+
+     transition: .3s ease;
+
+ }
+
+
+
+
+
+ .evidence-images img:hover {
+
+     transform: scale(1.03);
+
+     border-color: var(--secondary);
+
+ }
+
+
+
+
+
+ @media(max-width:900px) {
+
+
+     .evidence-grid {
+
+         grid-template-columns: 1fr;
+
+     }
+
+
+ }
+
+
+
+
+
+
+
+ /* Future Improvements */
+
+
+ .future-list {
+
+     margin-top: 35px;
+
+     padding: 30px 40px;
+
+     background: rgba(255, 255, 255, .03);
+
+     border: 1px solid var(--border);
+
+     border-radius: 15px;
+
+ }
+
+
+
+ .future-list li {
+
+     color: #cbd5e1;
+
+     padding: 14px 0;
+
+     border-bottom: 1px solid var(--border);
+
+ }
+
+
+
+ .future-list li:last-child {
+
+     border-bottom: none;
+
+ }
+
+
+
+
+
+
+
+
+ /* Responsive */
+
+
+ @media(max-width:1100px) {
+
+
+     .workflow-grid {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+
+ }
+
+
+
+ @media(max-width:700px) {
+
+
+     .workflow-grid {
+
+         grid-template-columns: 1fr;
+
+     }
+
+
+
+     .stack-list {
+
+         grid-template-columns: 1fr;
+
+     }
+
+
+     .documentation-section {
+
+         padding: 60px 5%;
+
+     }
+
+
+ }

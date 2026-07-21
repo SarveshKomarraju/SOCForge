@@ -1,0 +1,439 @@
+/* ==================================
+   SOCForge Simulations Page Styles
+================================== */
+
+
+/* Hero */
+
+.simulations-hero {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 90px 6% 70px;
+
+}
+
+
+.simulations-hero h1 {
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+}
+
+
+.simulations-hero h1 span {
+
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--secondary));
+
+    background-clip: text;
+
+    color: transparent;
+
+}
+
+
+.simulations-hero p {
+
+    margin-top: 25px;
+
+    max-width: 850px;
+
+    color: var(--muted);
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+/* Stats */
+
+
+.simulation-stats {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 30px 6% 80px;
+
+}
+
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.stat-card {
+
+    background: rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+
+.stat-card h2 {
+
+    font-size: 45px;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+
+}
+
+
+.stat-card p {
+
+    color: var(--muted);
+
+}
+
+
+
+
+
+/* Simulation Sections */
+
+
+.simulation-section {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 70px 6%;
+
+}
+
+
+
+
+
+.simulation-card {
+
+
+    margin-top: 40px;
+
+    background:
+
+        rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+}
+
+
+
+
+
+.simulation-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.simulation-header h3 {
+
+    font-size: 28px;
+
+}
+
+
+
+
+
+.status-success {
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    color: #00ff88;
+
+    border: 1px solid rgba(0, 255, 136, .4);
+
+    background: rgba(0, 255, 136, .08);
+
+}
+
+
+
+
+
+.simulation-card p {
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+/* Attack Flow */
+
+
+.attack-flow {
+
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 35px 0;
+
+}
+
+
+
+.attack-flow div {
+
+
+    padding: 15px 22px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+}
+
+
+
+.attack-flow div:nth-child(even) {
+
+    border: none;
+
+    background: none;
+
+    color: var(--primary);
+
+    font-size: 25px;
+
+}
+
+
+
+
+
+/* MITRE Box */
+
+
+.technique-box {
+
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: rgba(0, 217, 255, .06);
+
+    border: 1px solid rgba(0, 217, 255, .25);
+
+    color: #cbd5e1;
+
+}
+
+
+
+
+
+/* Investigation Result */
+
+
+.result-box {
+
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: rgba(0, 255, 136, .05);
+
+    border: 1px solid rgba(0, 255, 136, .25);
+
+}
+
+
+
+.result-box strong {
+
+    color: #00ff88;
+
+}
+
+
+.result-box ul {
+
+    margin-top: 15px;
+
+    list-style: none;
+
+}
+
+
+.result-box li {
+
+    padding: 8px 0;
+
+    color: #cbd5e1;
+
+}
+
+
+
+
+
+/* Timeline */
+
+
+.timeline-section {
+
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 80px 6%;
+
+}
+
+
+
+.timeline {
+
+
+    margin-top: 40px;
+
+}
+
+
+
+.timeline div {
+
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    background: rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+}
+
+
+
+.timeline span {
+
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-right: 20px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px) {
+
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px) {
+
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .simulation-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+}

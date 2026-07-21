@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCForge | Documentation</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/documentation.css">
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-symbol">></span>
+                SOCForge
+
+            </a>
+
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="detections.html">Detections</a>
+                </li>
+
+                <li>
+                    <a href="simulations.html">Simulations</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a class="active" href="documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+
+
+    <main>
+
+
+
+        <section class="documentation-hero">
+
+
+            <div class="hero-tag">
+
+                <span></span>
+
+                LAB DOCUMENTATION
+
+            </div>
+
+
+
+            <h1>
+
+                SOC
+
+                <br>
+
+                <span>Engineering Report</span>
+
+            </h1>
+
+
+
+            <p>
+
+                Technical documentation covering the design, implementation,
+                testing, and investigation workflow of the SOCForge home lab.
+
+            </p>
+
+
+        </section>
+
+
+
+
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>01 / OVERVIEW</span>
+
+                <h2>Project Objective</h2>
+
+            </div>
+
+
+
+            <div class="doc-card">
+
+
+                <p>
+
+                    SOCForge is a simulated Security Operations Center environment
+                    built to demonstrate endpoint monitoring, threat detection,
+                    incident investigation, and adversary simulation.
+
+                </p>
+
+
+                <p>
+                    By implementing open-source security technologies, this lab replicates
+                    the operational lifecycle of an enterprise SOC. I engineered a pipeline to
+                    ingest unstructured endpoint logs, normalize the telemetry, trigger correlated
+                    alerts, and map adversarial behavior directly to the MITRE ATT&CK matrix.
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>02 / WORKFLOW</span>
+
+                <h2>Detection Engineering Process</h2>
+
+            </div>
+
+
+
+            <div class="workflow-grid">
+
+
+                <div class="workflow-card">
+
+                    <h3>01</h3>
+
+                    <h4>Attack Simulation</h4>
+
+                    <p>
+
+                        Controlled adversary techniques are executed against
+                        the Windows endpoint.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-card">
+
+                    <h3>02</h3>
+
+                    <h4>Telemetry Collection</h4>
+
+                    <p>
+
+                        Sysmon and Wazuh agents collect endpoint activity.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-card">
+
+                    <h3>03</h3>
+
+                    <h4>Rule Development</h4>
+
+                    <p>
+
+                        Custom detection rules are created to identify malicious behavior.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-card">
+
+                    <h3>04</h3>
+
+                    <h4>Investigation</h4>
+
+                    <p>
+
+                        Alerts are analyzed and mapped to attacker techniques.
+
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>03 / TECHNOLOGY</span>
+
+                <h2>Security Stack</h2>
+
+            </div>
+
+
+
+            <div class="stack-list">
+
+
+                <div>
+
+                    <strong>Wazuh</strong>
+
+                    <p>
+                        SIEM/XDR platform used for alert generation and monitoring.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>Sysmon</strong>
+
+                    <p>
+                        Windows telemetry collection for process and activity visibility.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>MITRE ATT&CK</strong>
+
+                    <p>
+                        Framework used for classifying adversary techniques.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Virtualization (VirtualBox)</strong>
+                    <p>
+                        An isolated host-only network topology configured to safely simulate malicious behaviors without
+                        risk of external exposure.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>04 / EVIDENCE</span>
+
+                <h2>Lab Evidence</h2>
+
+            </div>
+
+
+
+            <div class="evidence-box">
+
+
+                <p>
+
+                    Screenshots, alert captures, dashboards, and investigation
+                    artifacts collected during SOCForge testing and attack simulations.
+
+                </p>
+
+
+
+
+                <div class="evidence-grid">
+
+
+
+                    <div class="evidence-card">
+
+
+                        <h3>
+
+                            Wazuh Dashboard & Agent Information
+
+                        </h3>
+
+
+                        <p>
+
+                            Proof of active endpoint monitoring, telemetry collection,
+                            and Wazuh environment configuration.
+
+                        </p>
+
+
+
+                        <div class="evidence-images">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/wazuh-dashboard/Wazuh_Dashboard_Sarvesh.png"
+                                alt="Wazuh Dashboard">
+
+
+                            <img class="expand-image" src="assets/screenshots/wazuh-dashboard/Wazuh_Events_Overview.png"
+                                alt="Wazuh Events Overview">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="evidence-card">
+
+
+                        <h3>
+
+                            PowerShell Detection Engineering
+
+                        </h3>
+
+
+                        <p>
+
+                            Detection of suspicious PowerShell activity through Sysmon
+                            telemetry, Wazuh rules, and MITRE ATT&CK mapping.
+
+                        </p>
+
+
+
+                        <div class="evidence-images">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/powershell-detection/PowerShell_Detection_Rule_Config.png"
+                                alt="PowerShell Detection Rule">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/powershell-detection/PowerShell_MITRE_T1059_Details.png"
+                                alt="MITRE PowerShell Mapping">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/powershell-detection/Encoded_Command_Rule_92057.png"
+                                alt="Encoded Command Detection">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="evidence-card">
+
+
+                        <h3>
+
+                            Phase A Attack Chain
+
+                        </h3>
+
+
+                        <p>
+
+                            Reconstruction of the initial adversary workflow including
+                            hidden PowerShell execution and download activity.
+
+                        </p>
+
+
+
+                        <div class="evidence-images">
+
+
+                            <img class="expand-image" src="assets/screenshots/phase-a/Timeline_01_Hidden_PowerShell.png"
+                                alt="Hidden PowerShell Detection">
+
+
+                            <img class="expand-image" src="assets/screenshots/phase-a/Timeline_02_Download_Activity.png"
+                                alt="Download Activity Detection">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="evidence-card">
+
+
+                        <h3>
+
+                            Phase B Attack Chain
+
+                        </h3>
+
+
+                        <p>
+
+                            Analysis of living-off-the-land techniques involving
+                            Windows utilities and execution methods.
+
+                        </p>
+
+
+
+                        <div class="evidence-images">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/phase-b/Timeline_03_Certutil_Obfuscation.png"
+                                alt="Certutil Detection">
+
+
+                            <img class="expand-image" src="assets/screenshots/phase-b/Timeline_04_Mshta_Execution.png"
+                                alt="Mshta Detection">
+
+
+                            <img class="expand-image"
+                                src="assets/screenshots/phase-b/Timeline_05_Rundll32_Execution.png"
+                                alt="Rundll32 Detection">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>05 / FINDINGS</span>
+
+                <h2>Investigation Findings</h2>
+
+            </div>
+
+
+
+            <div class="doc-card">
+
+
+                <p>
+
+                    SOCForge successfully demonstrated a complete detection
+                    engineering workflow, from adversary simulation to alert
+                    investigation and evidence collection.
+
+                </p>
+
+
+
+                <ul class="future-list">
+                    <li>
+                        Successfully detected administrative privilege bypasses and obfuscated scripts
+                        by analyzing Sysmon Process Creation (Event ID 1) telemetry forwarded to Wazuh.
+                    </li>
+                    <li>
+                        Reconstructed complete multi-stage execution paths, tracing how malicious processes
+                        initiated remote outbound connections to pull downstream payloads.
+                    </li>
+                    <li>
+                        Mapped distinct adversarial actions (such as LOLBin manipulation) to specific
+                        MITRE ATT&CK techniques, proving coverage across Defense Evasion and Execution tactics.
+                    </li>
+                    <li>
+                        Developed and validated highly targeted XML detection rules to filter out baseline noise
+                        while successfully catching malicious runtime arguments.
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="documentation-section">
+
+
+            <div class="section-heading">
+
+                <span>06 / FUTURE</span>
+
+                <h2>Future Improvements</h2>
+
+            </div>
+
+
+
+            <ul class="future-list">
+                <li>Expanding simulations to cover registry-based persistence and credential dumping techniques (e.g.,
+                    LSASS parsing).</li>
+                <li>Developing custom active-response scripts to automatically isolate compromised endpoints upon
+                    high-severity alerts.</li>
+                <li>Integrating open-source threat intelligence feeds (MISP/OTX) directly into the Wazuh pipeline for
+                    automated IOC matching.</li>
+                <li>Transitioning custom detection rules into a GitOps workflow using a Sigma-to-Wazuh compilation
+                    pipeline.</li>
+            </ul>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+
+        <p>
+            SOCForge Home Lab
+        </p>
+
+
+        <p>
+            Built with Wazuh • Sysmon • MITRE ATT&CK
+        </p>
+
+
+    </footer>
+
+    <div class="image-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img class="modal-image">
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

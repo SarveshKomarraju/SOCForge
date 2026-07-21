@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCForge | Overview</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/overview.css">
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-symbol">></span>
+                SOCForge
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="active" href="overview.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="detections.html">Detections</a>
+                </li>
+
+                <li>
+                    <a href="simulations.html">Simulations</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+
+        <section class="overview-hero">
+
+
+            <div class="hero-tag">
+
+                <span></span>
+
+                SOC Environment
+
+            </div>
+
+
+
+            <h1>
+
+                Security Operations
+
+                <br>
+
+                <span>Lab Architecture</span>
+
+            </h1>
+
+
+
+            <p>
+                A high-fidelity defense architecture designed to ingest granular host-level logs,
+                process security events through a centralized rule engine, and provide security analysts
+                with the telemetry required to perform deep forensic reconstruction of adversary activity.
+            </p>
+
+
+        </section>
+
+
+
+
+
+
+        <section class="lab-overview">
+
+
+            <div class="section-heading">
+
+                <span>ENVIRONMENT</span>
+
+                <h2>Infrastructure Overview</h2>
+
+            </div>
+
+
+
+
+            <div class="overview-grid">
+
+
+                <div class="overview-card">
+                    <h3>🖥 Workstation Audit Source</h3>
+                    <p>
+                        The target host configured with restrictive logging policies to generate telemetry during
+                        simulation runs.
+                    </p>
+                    <ul>
+                        <li>Wazuh Agent log forwarder</li>
+                        <li>Sysmon (Process, Network, Registry monitoring)</li>
+                        <li>Windows Security Event Log tuning (Audit Policy)</li>
+                        <li>Parent-Child process tree visibility</li>
+                    </ul>
+                </div>
+
+                <div class="overview-card">
+                    <h3>⚡ SIEM & Aggregation Engine</h3>
+                    <p>
+                        The central analytical pipeline hosted on a Linux backend, tasked with decoding, mapping, and
+                        alerting.
+                    </p>
+                    <ul>
+                        <li>Ubuntu-based Wazuh Server deployment</li>
+                        <li>Custom XML Decoders & Rule sets</li>
+                        <li>Real-time alert categorization & indexing</li>
+                        <li>Native MITRE ATT&CK mapping engine</li>
+                    </ul>
+                </div>
+
+                <div class="overview-card">
+                    <h3>🔎 Triaging & Root-Cause Analysis</h3>
+                    <p>
+                        The operational workflow for investigating alerts and mapping out the scope of an intrusion.
+                    </p>
+                    <ul>
+                        <li>Alert timeline and timestamp analysis</li>
+                        <li>Adversary technique correlation</li>
+                        <li>Command-line forensic parsing</li>
+                        <li>Indicators of Compromise (IOC) harvesting</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="data-flow">
+
+
+
+            <div class="section-heading">
+
+                <span>TELEMETRY PIPELINE</span>
+
+                <h2>Detection Architecture</h2>
+
+            </div>
+
+
+
+
+            <div class="flow-container">
+
+
+
+                <div class="flow-node">
+
+                    Attacker Simulation
+
+                </div>
+
+
+                <div class="flow-arrow">
+
+                    ↓
+
+                </div>
+
+
+                <div class="flow-node">
+
+                    Windows Endpoint
+
+                    <br>
+
+                    (Sysmon)
+
+                </div>
+
+
+
+                <div class="flow-arrow">
+
+                    ↓
+
+                </div>
+
+
+
+                <div class="flow-node highlight">
+
+                    Wazuh Agent
+
+                </div>
+
+
+
+                <div class="flow-arrow">
+
+                    ↓
+
+                </div>
+
+
+
+                <div class="flow-node highlight">
+
+                    Wazuh Manager
+
+                </div>
+
+
+
+                <div class="flow-arrow">
+
+                    ↓
+
+                </div>
+
+
+
+                <div class="flow-node">
+
+                    Custom Detection Rules
+
+                </div>
+
+
+
+                <div class="flow-arrow">
+
+                    ↓
+
+                </div>
+
+
+
+                <div class="flow-node">
+
+                    Security Investigation
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="technology-section">
+
+
+            <div class="section-heading">
+
+                <span>SECURITY STACK</span>
+
+                <h2>Technologies Used</h2>
+
+            </div>
+
+
+
+            <div class="tech-grid">
+
+
+                <div>
+                    <h3>Wazuh SIEM/XDR</h3>
+                    <p>
+                        Serves as the analytical brain of the lab. It ingests unstructured event logs forwarded by
+                        agents, passes them through customized XML decoders, and checks them against rulesets to
+                        identify active compromises.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>System Monitor (Sysmon)</h3>
+                    <p>
+                        Provides deep-visibility host monitoring. Configured with a customized modular XML configuration
+                        to filter noisy background processes while capturing high-fidelity Event IDs (e.g., ID 1 for
+                        Process Creation, ID 3 for Network Connections).
+                    </p>
+                </div>
+
+                <div>
+                    <h3>MITRE ATT&CK Framework</h3>
+                    <p>
+                        Used to operationalize incoming alerts. By tagging custom rules with ATT&CK technique IDs (such
+                        as T1059 for Command and Scripting Interpreter), alerts are contextually aligned with actual
+                        real-world threat actors.
+                    </p>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+
+        <p>
+
+            SOCForge Home Lab
+
+        </p>
+
+
+        <p>
+
+            Built with Wazuh • Sysmon • MITRE ATT&CK
+
+        </p>
+
+
+    </footer>
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

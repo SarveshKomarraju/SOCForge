@@ -1,0 +1,451 @@
+/* ==================================
+   SOCForge Detection Engineering Styles
+================================== */
+
+
+/* Hero */
+
+.detections-hero {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 90px 6% 70px;
+
+}
+
+
+
+.detections-hero .hero-tag {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.detections-hero h1 {
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+}
+
+
+
+.detections-hero h1 span {
+
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--secondary));
+
+    background-clip: text;
+
+    color: transparent;
+
+}
+
+
+
+.detections-hero p {
+
+    margin-top: 25px;
+
+    max-width: 850px;
+
+    color: var(--muted);
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+
+
+/* Statistics */
+
+
+.stats-section {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 20px 6% 80px;
+
+}
+
+
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+.stat-card {
+
+    background:
+        rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    transition: .3s ease;
+
+}
+
+
+
+.stat-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+}
+
+
+
+.stat-card h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--secondary));
+
+    background-clip: text;
+
+    color: transparent;
+
+}
+
+
+
+.stat-card p {
+
+    color: var(--muted);
+
+}
+
+
+
+
+
+
+
+/* Detection Section */
+
+
+.detections-section {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 80px 6%;
+
+}
+
+
+
+.detections-grid {
+
+    margin-top: 45px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+
+
+
+/* Detection Cards */
+
+
+.detection-card {
+
+    background:
+
+        rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    transition: .3s ease;
+
+}
+
+
+
+.detection-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(0, 217, 255, .5);
+
+    box-shadow:
+
+        0 20px 50px rgba(0, 0, 0, .3);
+
+}
+
+
+
+.detection-card h3 {
+
+    font-size: 22px;
+
+    margin: 20px 0;
+
+}
+
+
+
+.detection-card p {
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+/* Severity Labels */
+
+
+.severity {
+
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+}
+
+
+
+.severity.high {
+
+    background:
+
+        rgba(255, 165, 0, .15);
+
+    border: 1px solid rgba(255, 165, 0, .4);
+
+}
+
+
+
+.severity.critical {
+
+    background:
+
+        rgba(255, 0, 80, .15);
+
+    border: 1px solid rgba(255, 0, 80, .45);
+
+}
+
+
+
+
+
+
+/* Detection Details */
+
+
+.detail {
+
+    padding: 12px 0;
+
+    border-bottom:
+
+        1px solid var(--border);
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+}
+
+
+
+.detail:last-child {
+
+    border-bottom: none;
+
+}
+
+
+
+.detail strong {
+
+    display: block;
+
+    color: white;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+
+
+
+/* Development Workflow */
+
+
+.process-section {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 80px 6%;
+
+}
+
+
+
+.process-flow {
+
+    margin-top: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.process-flow div:not(:nth-child(even)) {
+
+    width: 300px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background:
+
+        rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    font-weight: 600;
+
+}
+
+
+
+.process-flow div:nth-child(even) {
+
+    color: var(--primary);
+
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px) {
+
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .detections-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:600px) {
+
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .process-flow div:not(:nth-child(even)) {
+
+        width: 90%;
+
+    }
+
+
+}

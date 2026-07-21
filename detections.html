@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCForge | Detections</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/detections.css">
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-symbol">></span>
+                SOCForge
+
+            </a>
+
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+
+                <li>
+                    <a class="active" href="detections.html">Detections</a>
+                </li>
+
+                <li>
+                    <a href="simulations.html">Simulations</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <main>
+
+
+        <section class="detections-hero">
+
+
+            <div class="hero-tag">
+
+                <span></span>
+
+                DETECTION ENGINEERING
+
+            </div>
+
+
+
+            <h1>
+
+                Custom Security
+
+                <br>
+
+                <span>Detection Rules</span>
+
+            </h1>
+
+
+
+            <p>
+                A catalog of custom Wazuh rules mapped to MITRE ATT&CK tactics.
+                These rules parse Sysmon events to surface active post-exploitation,
+                defense evasion, and credential/tool transfer attempts.
+            </p>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="stats-section">
+
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <h2>05</h2>
+
+                    <p>Custom Rules</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h2>04</h2>
+
+                    <p>MITRE Techniques</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h2>02</h2>
+
+                    <p>Attack Chains</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h2>01</h2>
+
+                    <p>Endpoint Monitored</p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="detections-section">
+
+
+            <div class="section-heading">
+
+                <span>RULE DATABASE</span>
+
+                <h2>Implemented Detections</h2>
+
+            </div>
+
+
+
+
+
+
+            <div class="detections-grid">
+
+
+
+
+
+
+                <div class="detection-card">
+
+
+                    <div class="severity high">
+
+                        HIGH | LEVEL 12
+
+                    </div>
+
+
+                    <h3>
+
+                        Suspicious PowerShell Execution
+
+                    </h3>
+
+
+                    <p>
+                        Identifies PowerShell processes spawned with administrative override parameters commonly used to
+                        bypass default security policies.
+
+                    </p>
+
+
+
+                    <div class="detail">
+
+                        <strong>Rule ID</strong>
+
+                        100002
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>MITRE</strong>
+
+                        T1059.001 - PowerShell
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>Detection Logic</strong>
+
+                        ExecutionPolicy Bypass
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="detection-card">
+
+
+                    <div class="severity high">
+
+                        HIGH | LEVEL 12
+
+                    </div>
+
+
+                    <h3>
+
+                        Encoded PowerShell Command
+
+                    </h3>
+
+
+                    <p>
+
+                        Identifies PowerShell commands executed through
+                        Base64 encoded arguments.
+
+                    </p>
+
+
+
+                    <div class="detail">
+
+                        <strong>Rule ID</strong>
+
+                        100003
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>MITRE</strong>
+
+                        T1059.001 - PowerShell
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>Detection Logic</strong>
+
+                        -EncodedCommand
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="detection-card">
+
+
+                    <div class="severity high">
+
+                        HIGH | LEVEL 12
+
+                    </div>
+
+
+                    <h3>
+
+                        Hidden PowerShell Execution
+
+                    </h3>
+
+                    <p>
+                        Flags PowerShell instances initiated with hidden window arguments, a standard tactic used by
+                        attackers to hide background command execution from users.
+                    </p>
+
+
+
+                    <div class="detail">
+
+                        <strong>Rule ID</strong>
+
+                        100004
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>MITRE</strong>
+
+                        T1059.001 - PowerShell
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>Detection Logic</strong>
+
+                        -WindowStyle Hidden
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="detection-card">
+
+
+                    <div class="severity high">
+
+                        HIGH | LEVEL 12
+
+                    </div>
+
+
+                    <h3>
+
+                        PowerShell Download Activity
+
+                    </h3>
+
+
+                    <p>
+
+                        Detects PowerShell commands used to retrieve
+                        remote files or execute download activity.
+
+                    </p>
+
+
+
+                    <div class="detail">
+
+                        <strong>Rule ID</strong>
+
+                        100005
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>MITRE</strong>
+
+                        T1105 - Ingress Tool Transfer
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>Detection Logic</strong>
+
+                        Invoke-WebRequest / DownloadString
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="detection-card">
+
+
+                    <div class="severity critical">
+
+                        CRITICAL | LEVEL 15
+
+                    </div>
+
+
+                    <h3>
+
+                        Certutil LOLBin Abuse
+
+                    </h3>
+
+
+                    <p>
+                        Detects suspicious use of the Windows certificate utility (certutil.exe) for rogue file transfer
+                        behavior.
+                    </p>
+
+                    <div class="detail">
+                        <strong>Rule ID</strong>
+                        100006
+                    </div>
+
+                    <div class="detail">
+                        <strong>MITRE</strong>
+                        T1105 - Ingress Tool Transfer
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <strong>Detection Logic</strong>
+
+                        certutil.exe -urlcache
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="process-section">
+
+
+            <div class="section-heading">
+
+                <span>WORKFLOW</span>
+
+                <h2>Detection Development Process</h2>
+
+            </div>
+
+
+
+            <div class="process-flow">
+
+
+                <div>
+
+                    Attack Simulation
+
+                </div>
+
+
+                <div>↓</div>
+
+
+                <div>
+
+                    Telemetry Collection
+
+                </div>
+
+
+                <div>↓</div>
+
+
+                <div>
+
+                    Rule Development
+
+                </div>
+
+
+                <div>↓</div>
+
+
+                <div>
+
+                    Wazuh Alert Generation
+
+                </div>
+
+
+                <div>↓</div>
+
+
+                <div>
+
+                    Investigation & MITRE Mapping
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+
+
+        <p>
+
+            SOCForge Home Lab
+
+        </p>
+
+
+        <p>
+
+            Built with Wazuh • Sysmon • MITRE ATT&CK
+
+        </p>
+
+
+    </footer>
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

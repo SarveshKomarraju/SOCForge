@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCForge | Dashboard</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-symbol">></span>
+                SOCForge
+
+            </a>
+
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="detections.html">Detections</a>
+                </li>
+
+                <li>
+                    <a href="simulations.html">Simulations</a>
+                </li>
+
+                <li>
+                    <a class="active" href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+
+
+
+            <div class="nav-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+
+
+    <main>
+
+
+
+
+        <section class="dashboard-hero">
+
+
+            <div class="hero-tag">
+
+                <span></span>
+
+                SECURITY OPERATIONS CENTER
+
+            </div>
+
+
+
+            <h1>
+
+                Wazuh
+
+                <br>
+
+                <span>Detection Dashboard</span>
+
+            </h1>
+
+
+
+            <p>
+                An operational view of the SOCForge home lab. This dashboard tracks
+                real-time endpoint telemetry, correlates custom detection alerts, and
+                documents threat investigation workflows generated during simulation runs.
+            </p>
+
+
+        </section>
+
+        <section class="metrics-section">
+
+
+            <div class="metrics-grid">
+
+
+                <div class="metric-card">
+
+                    <h2>02</h2>
+
+                    <p>
+                        Attack Chains Tested
+                    </p>
+
+                </div>
+
+
+
+                <div class="metric-card">
+
+                    <h2>10<span>+</span></h2>
+
+                    <p>
+                        Alerts Generated
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="metric-card">
+
+                    <h2>05</h2>
+
+                    <p>
+                        MITRE Techniques
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="metric-card">
+
+                    <h2>7<span>+</span></h2>
+
+                    <p>
+                        Detection Rules
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="dashboard-overview">
+
+
+            <div class="section-heading">
+
+                <span>LAB STATUS</span>
+
+                <h2>Environment Overview</h2>
+
+            </div>
+
+
+
+
+            <div class="dashboard-grid">
+
+
+                <div class="dashboard-card">
+
+
+                    <h3>🖥 Windows Endpoint</h3>
+
+
+                    <p>
+
+                        Active Windows client forwarding Sysmon telemetry and OS logs.
+
+                    </p>
+
+
+                    <div class="card-status">
+
+                        ONLINE
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="dashboard-card">
+
+
+                    <h3>⚡ Wazuh Manager</h3>
+
+
+                    <p>
+
+                        Centralized SIEM/XDR engine parsing logs, correlating events, and triggering alerts.
+
+                    </p>
+
+
+                    <div class="card-status">
+
+                        ACTIVE
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="dashboard-card">
+
+
+                    <h3>🔎 Detection Engine</h3>
+
+
+                    <p>
+
+                        Custom Sigma-style rules mapped to MITRE ATT&CK techniques.
+
+                    </p>
+
+
+                    <div class="card-status">
+
+                        OPERATIONAL
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="evidence-section">
+
+
+            <div class="section-heading">
+
+                <span>ALERT EVIDENCE</span>
+
+                <h2>Wazuh Dashboard Screenshots</h2>
+
+            </div>
+
+
+
+
+
+            <div class="evidence-grid">
+
+
+
+                <div class="evidence-card">
+
+
+                    <img class="expand-image" src="assets/screenshots/phase-a/Timeline_01_Hidden_PowerShell.png"
+                        alt="Suspicious PowerShell Detection">
+
+
+                    <h3>
+
+                        Suspicious PowerShell Execution
+
+                    </h3>
+
+
+                    <p>
+                        Rule ID: 100002 (Suspicious PowerShell)
+                        <br>
+                        MITRE: T1059.001
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div class="evidence-card">
+
+
+                    <img class="expand-image"
+                        src="assets/screenshots/powershell-detection/Encoded_Command_Rule_92057.png"
+                        alt="Encoded PowerShell Detection">
+
+
+                    <h3>
+
+                        Encoded PowerShell Command
+
+                    </h3>
+
+
+                    <p>
+                        Rule ID: 100003 (Base64 PowerShell)
+                        <br>
+                        MITRE: T1059.001
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div class="evidence-card">
+
+                    <img class="expand-image" src="assets/screenshots/phase-b/Timeline_03_Certutil_Obfuscation.png"
+                        alt="Certutil Transfer Detection">
+
+
+                    <h3>
+
+                        LOLBin File Transfer
+
+                    </h3>
+
+
+                    <p>
+                        Rule ID: 100004 (Certutil Ingress)
+                        <br>
+                        MITRE: T1105
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="detection-summary">
+
+
+            <div class="section-heading">
+
+                <span>DETECTION SUMMARY</span>
+
+                <h2>Security Events</h2>
+
+            </div>
+
+
+
+
+            <div class="table-container">
+
+
+                <table>
+
+
+                    <tr>
+
+                        <th>
+
+                            Detection
+
+                        </th>
+
+
+                        <th>
+
+                            MITRE Technique
+
+                        </th>
+
+
+                        <th>
+
+                            Severity
+
+                        </th>
+
+
+                        <th>
+
+                            Status
+
+                        </th>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+
+                            Suspicious PowerShell
+
+                        </td>
+
+
+                        <td>
+
+                            T1059.001
+
+                        </td>
+
+
+                        <td>
+
+                            Level 12
+
+                        </td>
+
+
+                        <td>
+
+                            Detected
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+                    <tr>
+
+                        <td>
+
+                            Encoded Command
+
+                        </td>
+
+
+                        <td>
+
+                            T1059.001
+
+                        </td>
+
+
+                        <td>
+
+                            Level 12
+
+                        </td>
+
+
+                        <td>
+
+                            Detected
+
+                        </td>
+
+
+                    </tr>
+
+
+
+
+                    <tr>
+
+                        <td>
+
+                            Certutil Transfer
+
+                        </td>
+
+
+                        <td>
+
+                            T1105
+
+                        </td>
+
+
+                        <td>
+
+                            Level 12
+
+                        </td>
+
+
+                        <td>
+
+                            Detected
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                </table>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="workflow-section">
+
+
+            <div class="section-heading">
+
+                <span>ANALYST PROCESS</span>
+
+                <h2>Investigation Workflow</h2>
+
+            </div>
+
+
+
+
+            <div class="workflow">
+
+
+                <div>
+
+                    <span>01</span>
+
+                    Alert Triggered
+
+                </div>
+
+
+                <div>
+
+                    <span>02</span>
+
+                    Telemetry Collected
+
+                </div>
+
+
+                <div>
+
+                    <span>03</span>
+
+                    Event Correlation
+
+                </div>
+
+
+                <div>
+
+                    <span>04</span>
+
+                    Threat Classification
+
+                </div>
+
+
+                <div>
+
+                    <span>05</span>
+
+                    Incident Documentation
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+
+        <p>
+
+            SOCForge Home Lab
+
+        </p>
+
+
+        <p>
+
+            Built with Wazuh • Sysmon • MITRE ATT&CK
+
+        </p>
+
+
+    </footer>
+
+    <div class="image-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img class="modal-image">
+
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
